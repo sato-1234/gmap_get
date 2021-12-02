@@ -1,7 +1,7 @@
 # gmap_get
 Google MAPに[日本の都道府県]と[キーワード]を指定して、表示されたGoogleマイビジネス一覧を取得する動的スクレイピングコードです。<br/>
 「URL一覧情報」と「各URLの詳細情報」を取得してCSV化します。<br/>
-puppeteerライブラリを使用しております。  
+Node.jsとpuppeteerライブラリを使用しております。<br/>
 <br/>
 
 ## environment,Library
@@ -15,17 +15,17 @@ puppeteerライブラリを使用しております。
 <br/>
 
 ## Batch command（cd gmap_get）
-* URL list get command  
-* csv folder： ./csv/url/url_2XXX_XX_XX_XX_XX_XX.csv  
-* argument：　[都道府県] [keyword] [Number of pagination]  
+* URL list get command
+* csv folder： ./csv/url/url_2XXX_XX_XX_XX_XX_XX.csv
+* argument：　[都道府県] [keyword] [Number of pagination]
 ```bash
 node get_url.js 東京都 ラーメン屋 2
 ```
 <br>
 
-* URL detail get command    
-* csv folder： ./csv/data/data_2XXX_XX_XX_XX_XX_XX.csv  
-* argument：　[url_2XXX_XX_XX_XX_XX_XX.csv]  
+* URL detail get command
+* csv folder： ./csv/data/data_2XXX_XX_XX_XX_XX_XX.csv
+* argument：　[url_2XXX_XX_XX_XX_XX_XX.csv]
 ```bash
 node get_data.js url_2XXX_XX_XX_XX_XX_XX.csv
 ```
