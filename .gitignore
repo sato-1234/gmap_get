@@ -1,6 +1,6 @@
 .node-version
 node_modules/
 package-lock.json
-csv/*/
+*.csv
 
 .DS_Store
