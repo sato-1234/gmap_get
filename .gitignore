@@ -1,0 +1,6 @@
+.node-version
+node_modules/
+package-lock.json
+csv/*/
+
+.DS_Store
