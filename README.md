@@ -1,7 +1,7 @@
 # gmap_get
-Google MAPに[日本の都道府県]と[キーワード]を指定して、表示されたGoogleマイビジネス一覧を取得する動的スクレイピングコードです。<br/>
-「URL一覧情報」と「各URLの詳細情報」を取得してCSV化します。<br/>
-Node.jsとpuppeteerライブラリを使用しております。<br/>
+Google MAPに[日本の都道府県]と[キーワード]を指定して、表示されたGoogleマイビジネス一覧を取得する動的スクレイピングコードです。
+'URL一覧情報'と'各URLの詳細情報'を取得してCSV化します。
+Node.jsとpuppeteerライブラリなどを使用しております。
 <br/>
 
 ## environment,Library
@@ -12,7 +12,6 @@ Node.jsとpuppeteerライブラリを使用しております。<br/>
 * csv-parse: v4.16.3
 * csv-stringify: v5.6.5
 * iconv-lite: v0.6.3
-<br/>
 
 ## Batch command（cd gmap_get）
 * URL list get command
@@ -21,7 +20,6 @@ Node.jsとpuppeteerライブラリを使用しております。<br/>
 ```bash
 node get_url.js 東京都 ラーメン屋 2
 ```
-<br>
 
 * URL detail get command
 * csv folder： ./csv/data/data_2XXX_XX_XX_XX_XX_XX.csv
@@ -29,7 +27,6 @@ node get_url.js 東京都 ラーメン屋 2
 ```bash
 node get_data.js url_2XXX_XX_XX_XX_XX_XX.csv
 ```
-<br>
 
 ## Environment creation（cd gmap_get）
 1. "Node environment" is required in advance.
@@ -41,7 +38,7 @@ npm -v
 ```bash
 npm install --save puppeteer
 ```
-3. Specify the version in 「package.json」
+3. Specify the version in "package.json"
 ```bash
 {
   "dependencies": {
